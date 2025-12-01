@@ -13,12 +13,12 @@ unzip Xray-linux-64.zip
 rm -f Xray-linux-64.zip
 
 # 3. add config file
-wget -O config.json https://raw.githubusercontent.com/justlagom/edonyxorp/refs/heads/main/google-idx/xray-config-template.json
+wget -O config.json https://raw.githubusercontent.com/justlagom/fsne-Kalive/refs/heads/main/FirebaseStudio/xray-config-template.json
 sed -i 's/$PORT/'$PORT'/g' config.json
 sed -i 's/$UUID/'$UUID'/g' config.json
 
 # 4. create startup.sh
-wget https://raw.githubusercontent.com/justlagom/edonyxorp/refs/heads/main/google-idx/startup.sh
+wget https://raw.githubusercontent.com/justlagom/fsne-Kalive/refs/heads/main/FirebaseStudio/startup.sh
 sed -i 's#$PWD#'$PWD'#g' startup.sh
 chmod +x startup.sh
 
