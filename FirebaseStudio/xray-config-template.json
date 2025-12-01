@@ -3,16 +3,16 @@
     "loglevel": "warning"
   },
   "inbounds": [
-    {
-      "listen": "0.0.0.0", // 监听所有地址，处理外部请求
-      "port": "$PORT", // Nginx 外部暴露端口 (shell 脚本会替换为 8080)
+       {
+      "listen": null,
+      "port": $PORT,
       "protocol": "vless",
       "settings": {
         "clients": [
           {
-            "id": "$UUID", // shell 脚本会替换为您的 UUID
+            "email": "fz75vojn",
             "flow": "xtls-rprx-vision",
-            "email": "fz75vojn"
+            "id": "b3a053a4-062e-49fd-f98f-b6014dd7d4a9"
           }
         ],
         "decryption": "mlkem768x25519plus.native.600s.-FOjuOsx5U7P0gmVgs_ErqezQYmuQa6s7HQQL3biA0g",
@@ -23,14 +23,11 @@
         "network": "xhttp",
         "security": "none",
         "xhttpSettings": {
-          "path": "$PATH_VALUE", // Xray 流量路径 (shell 脚本会替换为 /b3a053a4)
-          "fallback": {
-            "dest": "$FALLBACK_PORT", // 回落目标端口 (shell 脚本会替换为 8880)
-            "path": "" // 不设置路径，所有不匹配 $PATH_VALUE 的流量都回落到 Python Web Server
-          },
+          "headers": {},
           "host": "",
           "mode": "auto",
           "noSSEHeader": false,
+          "path": "/b3a053a4",
           "scMaxBufferedPosts": 30,
           "scMaxEachPostBytes": "1000000",
           "scStreamUpServerSecs": "20-80",
