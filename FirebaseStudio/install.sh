@@ -7,7 +7,7 @@ PATH_VALUE="/b3a053a4"           # 传输路径
 
 # 假设您的 GitHub 仓库结构和 URL (只需要 index.html 和 Xray 配置)
 BASE_URL="https://raw.githubusercontent.com/justlagom/fsne-Kalive/refs/heads/main/FirebaseStudio"
-XRAY_CONFIG_URL="$BASE_URL/xray-config-template-fallback.json" # 注意：需要一个新的 Fallback 模板
+XRAY_CONFIG_URL="$BASE_URL/xray-config-template.json" # 注意：需要一个新的 Fallback 模板
 INDEX_HTML_URL="$BASE_URL/html/index.html" 
 
 # --- 1. 初始化目录 ---
