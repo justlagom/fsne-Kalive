@@ -5,14 +5,13 @@
   "inbounds": [
        {
       "listen": null,
-      "port": $PORT,
+      "port": 8001,
       "protocol": "vless",
       "settings": {
         "clients": [
           {
-            "email": "fz75vojn",
             "flow": "xtls-rprx-vision",
-            "id": "b3a053a4-062e-49fd-f98f-b6014dd7d4a9"
+            "id": "使用变量自定义"
           }
         ],
         "decryption": "mlkem768x25519plus.native.600s.-FOjuOsx5U7P0gmVgs_ErqezQYmuQa6s7HQQL3biA0g",
@@ -20,18 +19,11 @@
         "selectedAuth": "X25519, not Post-Quantum"
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "ws",
         "security": "none",
-        "xhttpSettings": {
-          "headers": {},
+        "wsSettings": {
           "host": "",
-          "mode": "auto",
-          "noSSEHeader": false,
-          "path": "/b3a053a4",
-          "scMaxBufferedPosts": 30,
-          "scMaxEachPostBytes": "1000000",
-          "scStreamUpServerSecs": "20-80",
-          "xPaddingBytes": "100-1000"
+          "path": "使用变量自定义"
         }
       }
     }
